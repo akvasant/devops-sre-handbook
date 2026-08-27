@@ -1,0 +1,48 @@
+# About Me
+
+I am Vasanth A K, a technology professional with **18+ years of overall IT experience**, including more than **15 years of experience in DevOps, SRE, Cloud Infrastructure, Platform Engineering, Automation, and Reliability Engineering**. Throughout my career, I have worked with organizations including Yahoo, Intuit, VMware, 247, and Trellix/FireEye, gaining extensive experience in building, scaling, automating, and operating enterprise and SaaS platforms.
+
+# Experience Split
+
+My overall experience can broadly be categorized into **30% DevOps, 30% SRE, 25% Platform Engineering, and 15% Internal Developer Platform (IDP) and Developer Experience (DevEx)**. These areas are interconnected, and my career has progressively evolved from traditional infrastructure and operations into DevOps, cloud engineering, SRE, platform engineering, and developer enablement.
+
+# DevOps Experience
+
+My DevOps experience includes **CI/CD, Jenkins, Terraform, Infrastructure as Code, Docker, Helm, Python, Shell scripting, configuration management, cloud automation, release automation, and DevSecOps**. I have worked on automating infrastructure provisioning, application deployments, build and release processes, environment management, and operational activities. I focus on reducing manual effort, improving deployment consistency, and creating repeatable and reliable engineering processes.
+
+# SRE Experience
+
+My SRE experience focuses on **production reliability, observability, incident management, root-cause analysis, capacity planning, high availability, disaster recovery, autoscaling, performance optimization, SLO/SLA practices, DNS failover, and production automation**. I have worked extensively on troubleshooting complex production issues, improving system reliability, implementing monitoring and alerting, and designing automated mechanisms to detect and respond to failures.
+
+# Platform Engineering Experience
+
+My Platform Engineering experience involves designing and operating **cloud-native platforms and reusable infrastructure** for engineering teams. I have extensive experience with **AWS, GCP, Azure, Kubernetes, Amazon EKS, Azure AKS, Terraform, Helm, Karpenter, HPA, KEDA, EBS CSI, ExternalDNS, External Secrets, Network Policies, Prometheus, Grafana, OpenTelemetry, and Fluent Bit**. My focus is on creating scalable, secure, highly available, and standardized platforms that application teams can consume without having to manage the underlying infrastructure themselves.
+
+# IDP / DevEx Experience
+
+My Internal Developer Platform and Developer Experience experience focuses on **developer self-service, reusable infrastructure modules, standardized CI/CD pipelines, golden paths, automated environment provisioning, Kubernetes deployment standards, integrated security, and reducing operational complexity for developers**. I believe a good platform should act as an internal product for engineering teams, providing simple and consistent interfaces while hiding unnecessary infrastructure complexity.
+
+# Cloud Experience
+
+I have strong hands-on experience across **AWS, GCP, and Azure**, with significant experience in AWS services including **EC2, EKS, Lambda, DynamoDB, S3, CloudWatch, Route 53, SNS, SQS, OpenSearch, IAM, and related services**. I have designed and operated cloud infrastructure with a strong focus on scalability, availability, security, automation, and cost optimization.
+
+# DevSecOps Experience
+
+I also have experience in **DevSecOps and shift-left security**, where security and quality checks are integrated earlier into the software development and delivery lifecycle. I have worked on integrating tools such as **Qwiet AI and SonarQube**, including security and image-scanning capabilities into development, CI/CD, and container workflows. My approach is to make security an integral part of the engineering process rather than treating it as a separate activity at the end of the delivery cycle.
+
+# Reliability and Monitoring
+
+One of my notable areas of experience is building automated monitoring and reliability solutions for SaaS platforms. I have worked on an **AWS Lambda-based monitoring and DNS failover platform** using services such as DynamoDB, OpenSearch, CloudWatch, S3, SNS, and SQS. The objective was to continuously monitor platform health, identify failures, and automate appropriate failover actions to improve service availability and reliability.
+
+# Technical Leadership
+
+In addition to hands-on engineering, I have experience in **technical architecture, platform modernization, cloud migration, infrastructure automation, reliability engineering, cost optimization, security, incident management, mentoring engineers, and cross-functional technical leadership**. I enjoy working on complex technical problems, evaluating different architectural approaches, and helping engineering teams adopt scalable and maintainable solutions.
+
+# Career Evolution
+
+My career has evolved from **Infrastructure and Operations → DevOps → Cloud Engineering → SRE → Platform Engineering → Internal Developer Platforms and Developer Experience**. This progression has given me a broad understanding of both application delivery and the underlying infrastructure required to operate applications reliably at scale. My key strength is combining hands-on engineering with architecture and technical leadership to build platforms that enable development teams to deliver software **faster, more securely, and more reliably**.
+
+# Personal Information
+
+My father's name is **Kanniappan K A** and my mother's name is **Manimegalai K**. My wife's name is **Mohana Priya**. I have two sons, **Pranaesh V and Nanmaran V**. Family is an important part of my personal life, and outside of my professional responsibilities, I enjoy spending time with my family and continuously learning new technologies, particularly in **cloud computing, Kubernetes, automation, platform engineering, DevOps, SRE, and AI**.
+
