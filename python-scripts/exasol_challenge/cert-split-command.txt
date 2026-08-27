@@ -1,0 +1,23 @@
+####Split Cert and CA
+awk '
+/-----BEGIN CERTIFICATE-----/ {n++}
+n > 0 {print > ("cert-" n ".pem")}
+' challenge-16.pem
+
+Output : cert-1.pem , cert-2.pem
+
+##List the Cert : 
+ls -l cert-*.pem
+
+##Inspect the Cert
+for f in cert-*.pem; do
+    echo "===== $f ====="
+    openssl x509 -in "$f" -noout \
+      -subject \
+      -issuer \
+      -dates
+done
+
+## Check Cert is valid CA cert
+openssl x509 -in cert-2.pem -noout -text | grep -A2 "Basic Constraints"
+
