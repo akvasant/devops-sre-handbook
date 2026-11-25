@@ -1,0 +1,79 @@
+
+pipeline {
+    agent any
+
+    environment {
+        IMAGE_NAME = 'github-gists-api'
+        CONTAINER_NAME = 'github-gists-api'
+    }
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                git branch: 'solution',
+                    url: 'https://github.com/EqualExperts-Assignments/equal-experts-successful-valuable-wholesome-balance-7f5a21deae58.git'
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                sh '''
+                    python3 -m venv .venv
+                    .venv/bin/pip install -r requirements.txt
+                '''
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                sh '''
+                    .venv/bin/python -m unittest discover -s tests -v
+                '''
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                sh '''
+                    docker build -t ${IMAGE_NAME}:${BUILD_NUMBER} .
+                '''
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                sh '''
+                    docker rm -f ${CONTAINER_NAME} || true
+                    docker run -d \
+                        --name ${CONTAINER_NAME} \
+                        -p 8080:8080 \
+                        ${IMAGE_NAME}:${BUILD_NUMBER}
+                '''
+            }
+        }
+
+        stage('Verify Deployment') {
+            steps {
+                sh '''
+                    sleep 3
+                    curl --fail http://localhost:8080/health
+                '''
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline completed successfully!'
+        }
+
+        failure {
+            echo 'Pipeline failed. Please check the logs.'
+        }
+
+        always {
+            echo 'Pipeline execution completed.'
+        }
+    }
+}
